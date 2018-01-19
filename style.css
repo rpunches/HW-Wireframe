@@ -4,6 +4,7 @@
 }
 
 body{
+	width: 960px;
 	font-size: 18px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -18,24 +19,24 @@ header{
 	height: 50px;
 	padding: 20px;
 	margin-bottom: 20px;
-	position: relative;
 }
 
-#section{
+.column{
 	float: left;
+}
+
+.section{
 	width: 495px;
-	height: 310px;
-	padding: 10px;
-	padding-top: 10px;
-	margin-right: 10px;
 }
 
-#aside{
-	float: left;
-	width: 405px;
-	height: 300px;
-	padding: 20px;
-	margin-left: 10px;
+.aside{
+	width: 445px;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
 }
 
 #article{
@@ -58,4 +59,7 @@ footer{
 	padding: 20px;
   	margin-top: 20px;
  	background-color: #ebebeb;
+ 	position: fixed;
+ 	left:0;
+ 	bottom: 0;
 }
